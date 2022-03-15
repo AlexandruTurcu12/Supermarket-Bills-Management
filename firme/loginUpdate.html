@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="stilMeniu.css">
+    <style>
+    p {text-align: center; font-family:Arial, Helvetica, sans-serif;}
+    a {text-align: center;}
+    .button1 {
+                display: inline-block;
+                border-radius: 4px;
+                background-color: #0000FF;
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 15px;
+                padding: 10px;
+                width: 150px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;
+            }
+    </style>
+</head>
+<body style="background-color:whitesmoke">
+    <nav>
+        <ul>
+            <li><a href="../meniu.html">Meniu</a></li>
+            <li><a href="../comenzi/comenzi.html">Comenzi</a></li>
+            <li><a href="../magazine/magazine.html">Magazine</a></li>
+            <li><a href="../furnizori/furnizori.html">Furnizori</a></li>
+            <li><a href="firme.html">Firme de transport</a></li>
+            <li><a href="../produse/produse.html">Produse</a></li>
+            <li><a href="../categorii/categorii.html">Categorii</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <p><b>Login</b></p>
+    <br>
+    <form action="loginUpdate.php" method="post">
+        <p>Numele de utilizator
+        <input type="text" name="Username"></p><br />
+        <p>Parola
+        <input type="password" name="Parola"></p><br />
+        <p>
+        <input class="button1" type="submit" value="Log in"></p>
+    </form>
+</body>
+</html>

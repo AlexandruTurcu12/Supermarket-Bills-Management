@@ -1,0 +1,56 @@
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Adaugare furnizori</title>
+        <link rel="stylesheet" href="stilMeniu.css">
+        <style>
+            p {text-align: center; font-family:Arial, Helvetica, sans-serif;}
+            .button1 {
+                display: inline-block;
+                border-radius: 4px;
+                background-color: #0000FF;
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 15px;
+                padding: 10px;
+                width: 150px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;
+            }
+        </style>
+</head>
+<body style="background-color:whitesmoke">
+    <nav>
+        <ul>
+            <li><a href="../meniu.html">Meniu</a></li>
+            <li><a href="../comenzi/comenzi.html">Comenzi</a></li>
+            <li><a href="../magazine/magazine.html">Magazine</a></li>
+            <li><a href="furnizori.html">Furnizori</a></li>
+            <li><a href="../firme/firme.html">Firme de transport</a></li>
+            <li><a href="../produse/produse.html">Produse</a></li>
+            <li><a href="../categorii/categorii.html">Categorii</a></li>
+        </ul>
+    </nav>
+        
+<br>
+<p><b>Adauga un furnizor</b>
+<br>
+<br>
+
+<form action="insertFurnizori.php" method="post">
+    <p>ID firma transport: <input type="text" name="FirmaTransportID" /></p><br />
+    <p>Nume: <input type="text" name="Nume" /></p><br />
+    <p>Strada: <input type="text" name="Strada" /></p><br />
+    <p>Numar: <input type="text" name="Numar" /></p><br />
+    <p>Oras: <input type="text" name="Oras" /></p><br />
+    <p>Judet: <input type="text" name="Judet" /></p><br />
+    <p>Cod postal: <input type="text" name="CodPostal" /></p><br />
+    <p>Telefon: <input type="text" name="Telefon" /></p><br />
+    <p>Email: <input type="text" name="Email" /></p><br />
+    <p><input class="button1" type="submit" value="Adauga" /></p>
+</form>
+
+</body>
+</html>
